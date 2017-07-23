@@ -1,0 +1,45 @@
+@import "../../assets/stylesheets/mixins"
+
+\:host
+  background-color: #111111
+  display: block
+  padding: 40px 0
+  text-align: center
+  h1
+    +font(18px, #949494, $satisfy, normal)
+    text-align: left
+  p
+    +font(14px, #999999, $open)
+    text-align: left
+  .social-links
+    margin-top: 100px
+    padding: 0
+    li
+      border: 0.5px solid #BCBCBC
+      color: #BCBCBC
+      display: inline-block
+      margin: 0 10px
+      padding-top: 15px
+      height: 50px
+      width: 50px
+      +rounded(100%)
+
+  .copyright
+    padding-top: 20px
+    +font(13px, #828282, $open)
+    span
+      color: $main-green
+  .info
+    padding: 0
+    text-align: left
+    li
+      padding-top: 10px
+      text-align: left
+      +font(14px, #999999, $open)
+      i
+        width: 30px
+        font-size: 20px
+
+
+
+

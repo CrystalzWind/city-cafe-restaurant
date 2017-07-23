@@ -1,0 +1,29 @@
+@import "../../assets/stylesheets/mixins"
+
+
+#logo
+  border: 1px dashed white
+  display: inline-block
+  margin: 40px auto 10px auto
+  padding: 10px 20px
+  z-index: 200
+  +rounded(55px)
+nav
+  height: 74px
+  z-index: 200
+  #main-menu
+    margin: 0 0 0 193px
+    padding: 0
+    li
+      display: inline-block
+      padding: 30.5px 15px
+      margin: 0
+      a
+        +font(1.2em, white, $montserrat, bold)
+        text-transform: uppercase
+        letter-spacing: 2px
+        &:hover, &:active
+          color: $main-green
+    .active
+      a
+        color: $main-green

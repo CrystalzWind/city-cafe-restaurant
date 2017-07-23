@@ -1,0 +1,16 @@
+.container
+  h1.heading Gallery
+  h2.col-md-8.offset-md-2.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.
+  .row
+    .col-md-12
+      ul#filter-button
+        li.active: a all
+        li: a Chines
+        li: a Continental
+        li: a asian
+        li: a europen
+
+.container-fluid: .row.no-gutters
+  .col-md-3(*ngFor="let img of [1, 2, 3, 4, 5, 6, 7, 8]; let i = index")
+    img#portfolio-img.img-responsive(src="../assets/images/6.gallery/{{i+1}}.jpg")
+

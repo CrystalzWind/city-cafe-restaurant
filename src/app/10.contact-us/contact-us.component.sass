@@ -1,0 +1,27 @@
+@import "../../assets/stylesheets/mixins"
+
+\:host
+  background-color: white
+  display: block
+  padding: 80px 0
+  text-align: center
+  h2
+    padding-bottom: 30px
+  .form-group
+    input, textarea
+      padding: 15px
+      height: 100%
+      width: 100%
+      +font(16px, #55595c, $open)
+    textarea
+      margin-top: 20px
+  button
+    background-color: $main-green
+    border: none
+    cursor: pointer
+    display: inline-block
+    margin-top: 20px
+    padding: 20px
+    +font(16px, white, $open)
+    &:hover
+      background-color: darken($main-green, 10%)

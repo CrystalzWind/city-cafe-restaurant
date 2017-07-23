@@ -1,0 +1,28 @@
+@import "normalize"
+@import "mixins"
+@import "grid"
+
+body
+  background-color: $main-white
+  font-size: 62.5%
+  font-family: 'Open Sans', sans-serif
+
+ul
+  list-style: none
+a
+  text-decoration: none
+  &:hover
+    cursor: pointer
+
+.img-responsive
+  max-width: 100%
+  height: auto
+  display: block
+
+.heading
+  +font(48px, $main-green, $satisfy)
+.sub-heading, p, h3
+  +font(14px, $main-gray, $open, 400)
+  line-height: 1.5
+
+

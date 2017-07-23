@@ -1,0 +1,28 @@
+@import "../../assets/stylesheets/mixins"
+
+\:host
+  background-color: white
+  display: block
+  padding: 80px 0
+  text-align: center
+  #filter-button
+    margin: 60px 0
+    padding: 0
+    li
+      border: 1px solid $main-green
+      display: inline-block
+      margin: 0 10px
+      padding: 10px 20px
+      text-transform: uppercase
+      &:hover
+        background-color: $main-green
+        a
+          color: white
+      a
+        +font(14px, $main-green, $open)
+    .active
+      background-color: $main-green
+      a
+        color: white
+  #portfolio-img
+    border: 1px solid white

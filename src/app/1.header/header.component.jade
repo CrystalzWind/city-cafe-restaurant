@@ -1,0 +1,19 @@
+.container
+  .row
+    #logo: img.image-responsive(src="../assets/images/logo.png")
+  .row
+    nav.col-md-12
+      ul#main-menu
+        li(routerLinkActive="active", [routerLinkActiveOptions]="{exact: true}"): a(routerLink="/" ) home
+        li(routerLinkActive="active"): a(routerLink="products") about
+        li: a services
+        li: a menu
+        li: a gallery
+        li: a chef
+        li: a feedback
+        li: a contact us
+
+
+
+
+
